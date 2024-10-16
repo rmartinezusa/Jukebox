@@ -1,0 +1,31 @@
+
+@host = http://localhost:3000
+
+### Get array of all users
+GET {{host}}/users
+
+### Get User by Id including all playlists
+GET {{host}}/users/4
+
+### Get array of all playlists
+GET {{host}}/playlists
+
+### Get playlist by id, including all tracks
+GET {{host}}/playlists/4
+
+### Post a new playlist
+POST {{host}}/playlists
+Content-Type: application/json
+
+{
+    "name": "favorites",
+    "description": "foo bar foo bar foo bar",
+    "ownerId": 4,
+    "trackIds": [2,12,3,10]
+}
+
+### Get all tracks
+GET {{host}}/tracks
+
+### Get specific track
+GET {{host}}/tracks/8

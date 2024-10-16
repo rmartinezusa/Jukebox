@@ -1,0 +1,27 @@
+{
+  "name": "jukebox",
+  "version": "1.0.0",
+  "description": "Introducing Jukebox, the successor to Jukebox Mini! We've secured some initial tracks for our digital music platform, so now users can add tracks to their playlists.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.21.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.21.0",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
